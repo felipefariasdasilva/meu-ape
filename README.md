@@ -33,13 +33,13 @@ Para rodar a aplicação, execute os próximos passos:
 
 1. Faça o clone do projeto
 ```
-https://github.com/felipefariasdasilva/class-video-index.git
+https://github.com/felipefariasdasilva/meu-ape.git
 ```
 
 2. Entre na pasta
 
 ```
-cd class-video-index
+cd meu-ape
 ```
 
 3. Instale as dependências

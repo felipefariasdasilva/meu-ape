@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/meu-ape/static/css/main.050523cc.chunk.css",
+    "main.js": "/meu-ape/static/js/main.edb2ce6d.chunk.js",
+    "main.js.map": "/meu-ape/static/js/main.edb2ce6d.chunk.js.map",
+    "runtime-main.js": "/meu-ape/static/js/runtime-main.98078962.js",
+    "runtime-main.js.map": "/meu-ape/static/js/runtime-main.98078962.js.map",
+    "static/js/2.a37183db.chunk.js": "/meu-ape/static/js/2.a37183db.chunk.js",
+    "static/js/2.a37183db.chunk.js.map": "/meu-ape/static/js/2.a37183db.chunk.js.map",
+    "index.html": "/meu-ape/index.html",
+    "precache-manifest.11f9a59f325aeee4fe6fa22d2bacaf7d.js": "/meu-ape/precache-manifest.11f9a59f325aeee4fe6fa22d2bacaf7d.js",
+    "service-worker.js": "/meu-ape/service-worker.js",
+    "static/css/main.050523cc.chunk.css.map": "/meu-ape/static/css/main.050523cc.chunk.css.map",
+    "static/js/2.a37183db.chunk.js.LICENSE.txt": "/meu-ape/static/js/2.a37183db.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98078962.js",
+    "static/js/2.a37183db.chunk.js",
+    "static/css/main.050523cc.chunk.css",
+    "static/js/main.edb2ce6d.chunk.js"
+  ]
+}

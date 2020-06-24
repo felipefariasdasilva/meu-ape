@@ -61,6 +61,7 @@ export default function HabitationList() {
         <FormControl className={
             classes.formControl
         }>
+            <label>Qual tipo?</label>
             <InputLabel id="demo-simple-select-label">Habitation</InputLabel>
             <Select labelId="demo-simple-select-label" id="demo-simple-select"
                 value={selectedHabitation}

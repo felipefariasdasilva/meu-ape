@@ -7,6 +7,7 @@ import './App.css';
 import ToogleButton from './ToogleButton';
 import HabitationList from './HabitationList'
 import AddressSearch from './AddressSearch'
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,7 +42,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ChooseCard() {
-    const classes = useStyles();
+    const classes = useStyles()
+    const history = useHistory()
 
     return (
         <Card className={
@@ -96,6 +98,7 @@ export default function ChooseCard() {
                                 xs={3}>
                                 <CardActions>
                                     <Button variant="contained" color="primary">Buscar</Button>
+                                    {history.push("/sales")}
                                 </CardActions>
 
                             </Grid>

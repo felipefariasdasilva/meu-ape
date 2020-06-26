@@ -8,11 +8,13 @@ import Typography from '@material-ui/core/Typography';
 import AspectRatio from '@material-ui/icons/AspectRatio'
 import SingleBed from '@material-ui/icons/SingleBed'
 import DriveEta from "@material-ui/icons/DriveEta"
-import MyImage from './casa-escrivaninha.jpg'
 import Bathhub from '@material-ui/icons/Bathtub'
+import { ButtonBase } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
+
 
 export default function HabitationForSale() {
-
+    const history = useHistory()
     const useStyles = makeStyles((theme) => ({
         root: {
           display: 'flex',
@@ -46,26 +48,30 @@ export default function HabitationForSale() {
     const classes = useStyles();
   const theme = useTheme();
 
+  const handleClick = () =>{
+    history.push("/sales-detail")
+  }
+
   return (
     <Card className={classes.root}>
+      <ButtonBase   
+           onClick={handleClick}
+      >
       <div className={classes.details}>
         <CardContent className={classes.content}>
-        <CardMedia
-            className={classes.cover}
-            image={MyImage}
-            title="Live from space album cover"
-        />
-          
+        
+          <img src='./assets/casa-room.jpg'/>
+
           <Typography component="h5" variant="h5">
             R$100.000
           </Typography>
           
           <Typography variant="subtitle1" color="textSecondary">
-            Condominio:
+            Condominio: R$360
           </Typography>
 
           <Typography variant="subtitle1" color="textSecondary">
-            IPTU:
+            IPTU: R$200
           </Typography>
 
         </CardContent>
@@ -93,7 +99,7 @@ export default function HabitationForSale() {
 
         </div>
       </div>
-      
+      </ButtonBase>
     </Card>
   );
 }

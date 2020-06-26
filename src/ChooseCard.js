@@ -41,14 +41,21 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+
+
 export default function ChooseCard() {
     const classes = useStyles()
     const history = useHistory()
 
+    function handleClick(){
+        history.push("/sales")
+    }
+
     return (
         <Card className={
                 classes.root
-            }
+            } 
+            
             variant="outlined">
             <CardContent>
 
@@ -97,8 +104,7 @@ export default function ChooseCard() {
                             <Grid item
                                 xs={3}>
                                 <CardActions>
-                                    <Button variant="contained" color="primary">Buscar</Button>
-                                    {history.push("/sales")}
+                                    <Button onClick={handleClick} variant="contained" color="primary">Buscar</Button>
                                 </CardActions>
 
                             </Grid>

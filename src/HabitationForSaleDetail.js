@@ -1,20 +1,38 @@
 import React from 'react';
-import {Card, Button, IconButton, Grid, Box} from '@material-ui/core';
+import {Card, Button, IconButton, Grid, Box, makeStyles} from '@material-ui/core';
 import AspectRatio from '@material-ui/icons/AspectRatio'
 import SingleBed from '@material-ui/icons/SingleBed'
 import DriveEta from "@material-ui/icons/DriveEta"
 import Bathhub from '@material-ui/icons/Bathtub'
 
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1
+    },
+    buttonCol:{
+        margin: "2%"
+    },
+    theButton:{
+        margin: "1%"
+    }
+
+}));
+
 export default function HabitationForSaleDetail() {
+    const classes = useStyles()
 
     return (
         <div>
             <Grid>
-                <img src='./assets/casa-room.jpg'/>
+                <center>
+                <img height="600px" width="100%" src={require('./assets/casa-room.jpg')} />
+                </center>
             </Grid>
 
             <Grid>
-                <label>Apartamento com 2 Quartos à Venda, 50 m² por R$ 190.000</label>
+                <h1>Apartamento com 2 Quartos à Venda, 50 m² por R$ 190.000</h1>
+                <label>Vila Antônio Augusto Luiz, Caçapava - SP VER NO MAPA</label>
             </Grid>
 
             <Grid>
@@ -55,25 +73,30 @@ export default function HabitationForSaleDetail() {
 
                 <Grid item xs={6}>
                     <Card >
-                        <label>ANUNCIANTE</label>
-                        <label>Nome do anunciante</label>
+                        <div>
+                            <label>ANUNCIANTE</label>
+                        </div>
+                        <div>
+                            <label>Felipe Farias</label>
+                        </div>
+                       
 
-                        <Box display="flex" flexDirection="column">
+                        <Box display="flex" flexDirection="column" className={classes.buttonCol}>
                             
-                        <Button variant="contained" color="primary">
-                            Contato por WhatApp
-                        </Button>
+                            <Button className={classes.theButton} variant="contained" color="primary">
+                                Contato por WhatApp
+                            </Button>
 
-                        <Button variant="contained" color="secondary">
-                            Quero visitar
-                        </Button>
+                            <Button className={classes.theButton} variant="contained" color="secondary">
+                                Quero visitar
+                            </Button>
 
-                        <Button variant="contained">
-                            Quero mais informações
-                        </Button>
+                            <Button className={classes.theButton} variant="contained">
+                                Quero mais informações
+                            </Button>
                         </Box>
                         
-
+                        
                         <label>Telefone</label>
 
                     </Card>

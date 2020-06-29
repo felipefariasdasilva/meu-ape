@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Header() {
-    const classes = useStyles();
 
+export default function Header() {
+    const classes = useStyles()
 
     return (
         <AppBar position="static">
@@ -54,7 +54,7 @@ export default function Header() {
                     className={
                         classes.title
                 }>
-                    Meu Apê
+                   Meu Apê
                 </Typography>
                 <Button color="inherit">Login</Button>
             </Toolbar>

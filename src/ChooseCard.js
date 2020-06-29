@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
     },
     gridcomp: {
         marginLeft: 5
+    },
+    backgroundPhoto:{
+        height: "100%",
+        backgroundImage: `url(${require("./assets/casa-room.jpg")})`  
     }
 }));
 
@@ -52,11 +56,9 @@ export default function ChooseCard() {
     }
 
     return (
-        <Card className={
-                classes.root
-            } 
+        <div className={classes.backgroundPhoto}>
             
-            variant="outlined">
+            <Card className={classes.root} variant="outlined">
             <CardContent>
 
                 <center>
@@ -117,5 +119,7 @@ export default function ChooseCard() {
 
 
         </Card>
+        </div>
+        
     )
 }

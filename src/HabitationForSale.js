@@ -9,7 +9,7 @@ import AspectRatio from '@material-ui/icons/AspectRatio'
 import SingleBed from '@material-ui/icons/SingleBed'
 import DriveEta from "@material-ui/icons/DriveEta"
 import Bathhub from '@material-ui/icons/Bathtub'
-import { ButtonBase } from '@material-ui/core';
+import { ButtonBase, Grid } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 
 
@@ -60,22 +60,26 @@ export default function HabitationForSale() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
         
-          <img src='./assets/casa-room.jpg'/>
+        <Grid container spacing={3}>
 
-          <Typography component="h5" variant="h5">
-            R$100.000
-          </Typography>
-          
-          <Typography variant="subtitle1" color="textSecondary">
-            Condominio: R$360
-          </Typography>
+          <Grid>
+            <img height="200px" src={require('./assets/casa-room.jpg')} />
+          </Grid>
 
-          <Typography variant="subtitle1" color="textSecondary">
-            IPTU: R$200
-          </Typography>
+          <Grid>
+            <Typography component="h5" variant="h5">
+              R$100.000
+            </Typography>
+            
+            <Typography variant="subtitle1" color="textSecondary">
+              Condominio: R$360
+            </Typography>
 
-        </CardContent>
-        <div className={classes.controls}>
+            <Typography variant="subtitle1" color="textSecondary">
+              IPTU: R$200
+            </Typography>
+
+            <div className={classes.controls}>
             
           <IconButton aria-label="square">
             <AspectRatio/> 
@@ -98,6 +102,13 @@ export default function HabitationForSale() {
           </IconButton>
 
         </div>
+        
+          </Grid>
+
+
+        </Grid>
+
+        </CardContent>
       </div>
       </ButtonBase>
     </Card>

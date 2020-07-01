@@ -12,7 +12,7 @@ import SingleBed from '@material-ui/icons/SingleBed'
 import DriveEta from "@material-ui/icons/DriveEta"
 import Bathhub from '@material-ui/icons/Bathtub'
 
-import {Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -30,9 +30,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HabitationForSaleDetail() {
     const classes = useStyles()
+
     const position = {
         lat: -23.1994602,
-        long: -45.8938382
+        lng: -45.8938382
     }
 
     const zoom = 17.29
@@ -82,12 +83,12 @@ export default function HabitationForSaleDetail() {
                     <label>Apartamento Residencial Paris</label>
                     <span>
                         Edifício Paris , Excelente localização próximo ao Supermercado Carrefour , Hospital da Cidade , farmácias e de escolas como Damasco , Objetivo, Mater Dei, Map
-                        
-                                            ✔ Apartamento de 50 m² com 2 dormitórios (com sacada com peitoril em alumínio e vidro laminado);
-                                            ✔ Piso em porcelanato na sala e nos quartos;
-                                            ✔ Ar condicionado na suíte e na sala de TV/Jantar;
-                                            ✔ Caso o cliente prefira , entregamos com Móveis planejados por arquiteta em todos os ambientes (cozinha, banheiros, quartos, sala);
-                                            ✔ 1 vaga de garagem.
+                                                
+                                                                    ✔ Apartamento de 50 m² com 2 dormitórios (com sacada com peitoril em alumínio e vidro laminado);
+                                                                    ✔ Piso em porcelanato na sala e nos quartos;
+                                                                    ✔ Ar condicionado na suíte e na sala de TV/Jantar;
+                                                                    ✔ Caso o cliente prefira , entregamos com Móveis planejados por arquiteta em todos os ambientes (cozinha, banheiros, quartos, sala);
+                                                                    ✔ 1 vaga de garagem.
                     </span>
                 </Grid>
 
@@ -143,7 +144,7 @@ export default function HabitationForSaleDetail() {
                 zoom={
                    zoom
             }>
-              
+                <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                 <Marker position={position}>
                     <Popup>
                         A pretty CSS3 popup.
@@ -152,6 +153,8 @@ export default function HabitationForSaleDetail() {
                     </Popup>
                 </Marker>
             </Map>
+
+            <h1>fim do texto</h1>
         </div>
     );
 }

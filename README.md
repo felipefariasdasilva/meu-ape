@@ -99,7 +99,7 @@ Por favor leia [CONTRIBUTING.md]() para mais detalhes a respeito do nosso códig
 
 ## Versionamento
 
-Nós usamos [GitHub](https://github.com/ para versionamento. Para visualizar as versões disponíveis veja [tags nesse repositórios](https://github.com/your/project/tags).  
+Nós usamos [GitHub](https://github.com/) para versionamento. Para visualizar as versões disponíveis veja [tags nesse repositórios](https://github.com/your/project/tags).  
 
 ## Autores
 

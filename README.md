@@ -1,6 +1,6 @@
-# Meu Apê
+# :wedding: Meu Apê
 
-Buscador de moradia
+E-commerce para aluguel e venda de imóveis
 
 ## Começando
 

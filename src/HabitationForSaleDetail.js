@@ -12,7 +12,7 @@ import SingleBed from '@material-ui/icons/SingleBed'
 import DriveEta from "@material-ui/icons/DriveEta"
 import Bathhub from '@material-ui/icons/Bathtub'
 
-import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
+import HabitationMap from './HabitationMap';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,13 +31,6 @@ const useStyles = makeStyles((theme) => ({
 export default function HabitationForSaleDetail() {
     const classes = useStyles()
 
-    const position = {
-        lat: -23.1994602,
-        lng: -45.8938382
-    }
-
-    const zoom = 17.29
-
     return (
         <div>
             <Grid>
@@ -45,7 +38,8 @@ export default function HabitationForSaleDetail() {
                     <img height="600px" width="100%"
                         src={
                             require('./assets/casa-room.jpg')
-                        }/>
+                        }
+                        alt="sala-de-casa"/>
                 </center>
             </Grid>
 
@@ -140,21 +134,8 @@ export default function HabitationForSaleDetail() {
             </Grid>
 
             <h2>Onde fica?</h2>
-            <Map center={position}
-                zoom={
-                   zoom
-            }>
-                <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                <Marker position={position}>
-                    <Popup>
-                        A pretty CSS3 popup.
-                        <br/>
-                        Easily customizable.
-                    </Popup>
-                </Marker>
-            </Map>
-
-            <h1>fim do texto</h1>
+            <HabitationMap />
+            
         </div>
     );
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import ChooseCard from './ChooseCard';
 import Header from './Header';
-import imagemFundo from './assets/casa-room.jpg'
 import Routes from './Routes';
 import {BrowserRouter} from 'react-router-dom';
 

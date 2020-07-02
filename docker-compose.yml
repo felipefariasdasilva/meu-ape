@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+
+  frontend: 
+    container_name: meu-ape-container
+    image: feliipefarias/meu-ape
+    volumes: 
+      - '.:/app/frontend'
+      - '/app/frontend/node_modules'
+    ports: 
+      - '3000:3000'
+    tty: true

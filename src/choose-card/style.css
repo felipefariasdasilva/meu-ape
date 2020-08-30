@@ -1,0 +1,27 @@
+.div-image{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.div-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: red;
+}
+
+.div-card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}

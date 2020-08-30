@@ -16,14 +16,8 @@ export default function App() {
 
 
     return (
-        <div className={
-            classes.root
-        }>
-            <Header/>
-            
-            <BrowserRouter>
-                <Routes/>
-            </BrowserRouter>
+        <div>
+            homeeee
         </div>
 
     )

@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Routes from './routes/Routes';
+import MainContainer from './containers/MainContainer';
 
 
 ReactDOM.render(
-    <App />,
+  <MainContainer>
+    <Routes />
+  </MainContainer>,
   document.getElementById('root')
 )

@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "price": 100.000,
+    "condominio": 460,
+    "iptu": 200,
+    "square": 120,
+    "beds": 3,
+    "bathroom": 2,
+    "car": 1
+}

@@ -8,6 +8,7 @@ import {
     IconButton
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,8 +54,11 @@ export default function Header() {
                     className={
                         classes.title
                 }>
-                   Meu Apê
+                   <Link to="/" style={{ textDecoration: "none" }}>
+                        <h3 style={{ color: "white" }}>Meu Apê</h3>
+                   </Link> 
                 </Typography>
+                <Button color="inherit">Anuncie aqui</Button>
                 <Button color="inherit">Login</Button>
             </Toolbar>
         </AppBar>
